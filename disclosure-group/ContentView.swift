@@ -9,8 +9,20 @@ import SwiftUI
 
 struct ContentView: View {
     var body: some View {
-        Text("Hello, world!")
+        
+        DisclosureGroup(
+            content: {
+//                Expanded content
+                Text("Content 1")
+                Text("Content 2")
+                Text("Content 3")
+            },
+            label: {
+//                Your custom view
+                Text("Click Me")
+            })
             .padding()
+        
     }
 }
 
